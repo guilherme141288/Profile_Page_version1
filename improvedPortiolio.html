@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<style>
+		button {
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 16px;
+			cursor: pointer;
+			margin-right: 10px;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>My Portfolio</h1>
+		<nav>
+			<ul>
+				<li><button onclick="scrollToExercises()">Exercises</button></li>
+				<li><button onclick="scrollToProjects()">Projects</button></li>
+				<li><button onclick="scrollToProfile()">Profile</button></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="exercises">
+			<h2>Exercises</h2>
+			<p>Here's a link to my exercises:</p>
+			<button onclick="window.location.href='C:/Users/Guilherme%20Bertuol/Pythonvs/Guanabara_exercises/'">Exercises</button>
+		</section>
+		<section id="projects">
+			<h2>Projects</h2>
+			<p>Here's a link to my projects:</p>
+			<button onclick="window.location.href='C:/Users/Guilherme%20Bertuol/Pythonvs/Coursera/'"> Projects </button>
+		</section>
+		<section id="profile">
+			<h2>Profile</h2>
+			<p>Here's a link to my profile:</p>
+			<button onclick="window.location.href='https://www.linkedin.com/in/guilherme-bertuol-76103a214'">Profile</button>
+		</section>
+	</main>
+
+	<script>
+		function scrollToExercises() {
+			document.querySelector('#exercises').scrollIntoView({
+				behavior: 'smooth'
+			});
+		}
+
+		function scrollToProjects() {
+			document.querySelector('#projects').scrollIntoView({
+				behavior: 'smooth'
+			});
+		}
+
+		function scrollToProfile() {
+			document.querySelector('#profile').scrollIntoView({
+				behavior: 'smooth'
+			});
+		}
+	</script>
+</body>
+</html>
