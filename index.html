@@ -47,15 +47,25 @@
 		</nav>
 	</header>
 	<main>
-		<section id="exercises">
+		<section id="LeetCode exercises">
 			<h2>Exercises</h2>
-			<p>Here's a link to my exercises:</p>
-			<button onclick="window.location.href= 'https://github.com/guilherme141288/Guanabara_exercises'">Exercises</button>
+			<p>Here's a link to my LeetCode exercises:</p>
+			<button onclick="window.location.href='https://github.com/guilherme141288/leetCode_exercises'">Exercises</button>
+		</section>
+		<section id="Guanabara_exercises">
+			<h2>Exercises</h2>
+			<p>Here's a link to other exercises I have completed:</p>
+			<button onclick="window.location.href='https://github.com/guilherme141288/Guanabara_exercises'">Exercises</button>
 		</section>
 		<section id="projects">
 			<h2>Projects</h2>
-			<p>Here's a link to my projects:</p>
-			<button onclick="window.location.href='https://github.com/guilherme141288/Profile_Page/tree/main/Coursera'">Projects</button>
+			<p>Here's a link to Many-to-manyDB relation project:</p>
+			<button onclick="window.location.href='https://github.com/guilherme141288/Many-to-ManyDBRelation.git'">Projects</button>
+		</section>
+		<section id="Personal_projects">
+			<h2>Projects</h2>
+			<p>Here's a link to my personal projects:</p>
+			<button onclick="window.location.href='https://github.com/guilherme141288/personal_projects'">Projects</button>
 		</section>
 		<section>
 			<h2>Image 1</h2>
@@ -76,7 +86,12 @@
 
 	<script>
 		function scrollToExercises() {
-			document.querySelector('#exercises').scrollIntoView({
+			document.querySelector('#LeetCode exercises').scrollIntoView({
+				behavior: 'smooth'
+			});
+		}
+		function scrollToExercises() {
+			document.querySelector('#Guanabara_exercises').scrollIntoView({
 				behavior: 'smooth'
 			});
 		}
@@ -89,6 +104,11 @@
 
 		function scrollToProfile() {
 			document.querySelector('#profile').scrollIntoView({
+				behavior: 'smooth'
+			});
+		}
+		function scrollToProfile() {
+			document.querySelector('#Personal_projects').scrollIntoView({
 				behavior: 'smooth'
 			});
 		}
